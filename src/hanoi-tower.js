@@ -14,8 +14,8 @@ import { NotImplementedError } from '../extensions/index.js';
  * calculateHanoi(9, 4308) => { turns: 511, seconds: 427 }
  *
  */
-export default function calculateHanoi(/* disksNumber, turnsSpeed */) {
-  let turns = 2 ** disksNumber - 1;
-  let seconds = Math.floor(turns / (turnsSpeed / 3600))
-  return {turns: turns, seconds: seconds };
+export default function calculateHanoi(disksNumber, turnsSpeed) {
+  let moves = 2 ** disksNumber - 1;
+  let secondsMoves = Math.floor(turns / (turnsSpeed / 3600))
+  return {moves: turns, secondsMoves: seconds };
 };
