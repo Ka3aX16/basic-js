@@ -13,7 +13,7 @@ import { NotImplementedError } from '../extensions/index.js';
  * createDreamTeam(['Olivia', 1111, 'Lily', 'Oscar', true, null]) => 'LOO'
  *
  */
-export default function createDreamTeam(/* members */) {
+export default function createDreamTeam(members) {
   if(members instanceof Array){
     return members.map(element => {
       if (typeof element === "string") return element.toUpperCase().trim().split('').slice(0, 1);
