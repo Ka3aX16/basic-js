@@ -14,7 +14,7 @@ import { NotImplementedError } from '../extensions/index.js';
  * ]) => 3`
  *
  */
-export default function countCats(/* matrix */) {
+export default function countCats(hiddenEars) {
   var foundCats = [];
   for (var i = 0; i < hiddenEars.length; i++) {
     var cats = hiddenEars[i].filter(ears => ears === "^^");
